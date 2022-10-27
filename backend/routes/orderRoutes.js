@@ -15,7 +15,7 @@ router.post('/', protect, addOrderItems);
 
 router.get('/', protect, getAllOrders);
 
-router.get('/myorders', protect, getAllOrders);
+router.get('/myorders', protect, getMyOrders);
 
 router.get('/:id', protect, getOrderById);
 
