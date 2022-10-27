@@ -42,15 +42,15 @@ const ProductEditScreen = () => {
         dispatch(listProductDetails(productId));
       } else {
         setName(product.name);
-        setBrand(product.brand);
-        setImage(product.image);
-        setDescription(product.description);
-        setCountInStock(product.countInStock);
         setPrice(product.price);
+        setImage(product.image);
+        setBrand(product.brand);
         setCategory(product.category);
+        setCountInStock(product.countInStock);
+        setDescription(product.description);
       }
     }
-  }, [product, productId, dispatch, navigate, successUpdate]);
+  }, [dispatch, navigate, productId, product, successUpdate]);
 
   const uploadFileHandler = async (e) => {
     const file = e.target.files[0];
