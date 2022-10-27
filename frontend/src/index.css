@@ -48,11 +48,17 @@ h2 {
   font-size: 1rem;
 }
 
+.no-product-found-message {
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 991px) {
   .custom-size-searchbox {
     margin-top: 0.75rem;
   }
 }
+
 @media (max-width: 500px) {
   .carousel img {
     height: 180px;

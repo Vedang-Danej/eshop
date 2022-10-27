@@ -36,7 +36,7 @@ const HomeScreen = () => {
           Go Back
         </Link>
       )}
-      <h1>Latest Produts</h1>
+      {products.length !== 0 ? <h1>Latest Produts</h1> : ''}
       {loading ? (
         <Loader />
       ) : error ? (
@@ -44,6 +44,11 @@ const HomeScreen = () => {
       ) : (
         <>
           <Row>
+            {products.length == 0 ? (
+              <h2 className="no-product-found-message">No products found.</h2>
+            ) : (
+              ''
+            )}
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                 <Product product={product} />
