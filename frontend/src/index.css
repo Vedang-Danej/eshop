@@ -53,3 +53,17 @@ h2 {
     margin-top: 0.75rem;
   }
 }
+@media (max-width: 500px) {
+  .carousel img {
+    height: 180px;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel-caption h2 {
+    font-size: 0.65rem;
+  }
+}

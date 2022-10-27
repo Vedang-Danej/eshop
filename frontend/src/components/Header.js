@@ -29,7 +29,7 @@ const Header = () => {
                   <i className="fas fa-shopping-cart"></i> Cart
                 </Nav.Link>
               </LinkContainer>
-              {userInfo ? (
+              {userInfo && userInfo.name ? (
                 <NavDropdown title={userInfo.name} id="username">
                   <LinkContainer to="/profile">
                     <NavDropdown.Item>Profile</NavDropdown.Item>
